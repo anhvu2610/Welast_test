@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express";
+import cors from "cors"; 
 import ApiServiceFactory from "./services/ApiServiceFactory";
 import GitHubAdapter from "./services/GitHubAdapter";
 import ForksFilterStrategy from "./strategy/ForksFilterStrategy";
@@ -6,6 +7,8 @@ import RepositoryFilter from "./strategy/RepositoryFilter";
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Welcome to WeLAST Fullstack Exercise!");
