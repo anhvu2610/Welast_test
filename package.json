@@ -1,0 +1,28 @@
+{
+  "name": "welast-api",
+  "version": "1.0.0",
+  "description": "WeLAST api Exercise - Part A (Node/Express with TypeScript)",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.4.1",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
